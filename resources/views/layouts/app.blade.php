@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="bg-gray-200">
 
 <head>
     <meta charset="utf-8">
@@ -43,7 +43,9 @@
         </div>
     </div>
 
-    {{ $slot }}
+    <div class="container mt-4 mx-auto px-10">
+        {{ $slot }}
+    </div>
 
     @livewireScripts
 </body>
